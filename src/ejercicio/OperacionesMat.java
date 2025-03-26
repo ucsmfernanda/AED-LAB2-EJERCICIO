@@ -44,10 +44,6 @@ public class OperacionesMat<T extends Number> implements Operable<T> {
     private T convertir(double resultado, T referencia) {
         if (referencia instanceof Integer) {
             return (T) Integer.valueOf((int) resultado);
-        } else if (referencia instanceof Long) {
-            return (T) Long.valueOf((long) resultado);
-        } else if (referencia instanceof Float) {
-            return (T) Float.valueOf((float) resultado);
         } else if (referencia instanceof Double) {
             return (T) Double.valueOf(resultado);
         } else {
